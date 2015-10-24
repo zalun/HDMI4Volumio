@@ -1,0 +1,36 @@
+# inherited from moodeaudio
+gpu_mem=16
+dtparam=i2c=on,i2s=on
+force_turbo=1
+
+# copied from 
+# https://learn.adafruit.com/adafruit-5-800x480-tft-hdmi-monitor-touchscreen-backpack/raspberry-pi-config
+# learn adafriut forum suggests these below, but it's working for me
+#hdmi_drive=2
+#hdmi_mode=16
+#hdmi_force_hotplug=1
+#disable_overscan=0 
+
+hdmi_group=2
+hdmi_mode=1
+hdmi_mode=87
+hdmi_cvt 800 480 60 6 0 0 0
+
+max_usb_current=1
+
+# uncomment to force a HDMI mode rather than DVI. This can make audio work in
+# DMT (computer monitor) modes
+#hdmi_drive=2
+ 
+# uncomment to increase signal to HDMI, if you have interference, blanking, or
+# no display
+#config_hdmi_boost=4
+ 
+# uncomment for composite PAL
+#sdtv_mode=2
+ 
+# uncomment to overclock the arm. 700 MHz is the default.
+#arm_freq=800
+
+# for more options see http://elinux.org/RPi_config.txt
+
